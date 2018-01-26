@@ -79,5 +79,6 @@ function reset(){
 	s('.tries span').innerHTML='0';
 	s('#page3').style.display='none';
 	s('#page1').style.display='block';
+	s('#page2 input').value=null;
 
 }
