@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess Number</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+<body>
+	<div class="page" id="page1">
+		<h1>The Higher or Lower Game</h1>
+		<button data-n="10" >Easy</button>
+		<button data-n="100" >Normal</button>
+		<button data-n="1000" >Hard</button>
+	</div>
+
+	<div class="page" id="page2">
+
+		<h1>Guess the number betwen 1 and <span></span></h1>
+		<p class="response"></p>
+		<input type="number" name="inputNumber" class="input" >
+		<button >Guess</button>
+
+		<p  class="text tries">Tries: <span>0</span></p>
+		<p  class="text used">Numbers Used:
+		<br><span></span></p>
+	</div>
+
+	<div class="page" id="page3">
+		<h1>CONGRATULATIONS!</h1>
+		<h2>Answer : <span></span></h2>
+		<p  class="text win">You tried <span></span> times!</p>
+		<button class="Again">Play Again!</button>
+	</div>
+	<script type="text/javascript" src="js/game.js"></script>
+</body>
+</html>
