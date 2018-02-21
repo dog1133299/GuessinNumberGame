@@ -18,7 +18,8 @@ button{
 	display: block;
 	margin: 25px auto;
 	border-radius: 15px;
-	box-shadow: 0 8px rgb(240,240,240);
+	-webkit-box-shadow: 0 8px rgb(240,240,240);
+	        box-shadow: 0 8px rgb(240,240,240);
 	outline: none;
 	
 }
@@ -28,8 +29,11 @@ button:hover {
 }
 button:active{
 	background-color:rgb(250,120,120);
-	box-shadow: 0 4px rgb(200,200,200);
-	transform: translateY(4px);
+	-webkit-box-shadow: 0 4px rgb(200,200,200);
+	        box-shadow: 0 4px rgb(200,200,200);
+	-webkit-transform: translateY(4px);
+	    -ms-transform: translateY(4px);
+	        transform: translateY(4px);
 }
 .page{
 	width: 600px;
@@ -45,12 +49,8 @@ button:active{
 	
 	
 }
-#page2{
-	display: none;
-}
-#page3{
-	display: none;
-}
+#page2{display: none;}
+#page3{display: none;}
 
 .input {
 		display: block;
@@ -61,10 +61,7 @@ button:active{
 		border: none;
 		 
 }
-.text{
-
-	font-size: 20px;
-}
+.text{font-size: 20px;}
 .response{
 	text-align: center;
 	font-size: 18px;
@@ -77,3 +74,17 @@ button:active{
 	font-size: 20px;
 	background: rgb(250,120,120);
 }
+
+
+ .msg{
+ 	width: 100%;
+ 	position: absolute;
+ 	bottom: 0;
+ 	color: white;
+ 	text-align: center;
+ 	font-family: 'Square721 BT','Montserrat', sans-serif;
+ 	font-size: 20px;
+ }
+ .msg>a{
+ 	text-decoration: none; 
+ }
